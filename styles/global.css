@@ -19,3 +19,25 @@
     --paragraph-md: 400 14px/170% "Poppins", sans-serif;
     --paragraph-sm: 400 12px/170% "Poppins", sans-serif;
 }
+
+body {
+    font: var(--paragraph-md);
+    color: var(--text-color-secondary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font: var(--heading1);
+    font-size: 1.5rem;
+    color: var(--text-color-primary);
+}
+
+@media (width >= 80em ) {
+    h1 {
+        font: var(--heading1);
+    }
+}

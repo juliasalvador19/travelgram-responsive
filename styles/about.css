@@ -1,0 +1,59 @@
+#about {
+    .container {
+        padding-inline: 2rem;
+        padding-block: 2rem;
+        gap: 2rem;
+
+        & img[src="assets/Profile.png"] {
+            width: 7.5rem;
+        }
+
+        &.container > div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        } 
+
+        & h1 + p {
+            margin-top: .5rem;
+        }
+
+        & ul[role="list"] > li {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+
+    @media (width >= 80em ) {
+        .container {
+            flex-direction: row;
+
+            & img[src="assets/Profile.png"] {
+                width: 11rem;
+            }
+
+            &.container > div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            } 
+            
+            & > div:nth-child(1) {
+                width: 37rem;
+                gap: 2rem;
+            }
+
+            & h1 + p {
+                margin-top: .5rem;
+            }
+
+            & > div:nth-child(2) {
+                width: 17.5rem;
+            }
+
+        }
+    }
+
+
+}

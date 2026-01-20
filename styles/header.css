@@ -1,0 +1,43 @@
+header {
+    background-color: var(--surface-color);
+    
+    .container {
+        padding-block: 1rem;
+
+        & .navigation {
+            height: 2.5rem;
+
+            & .profile a > img {
+                width: 2.5rem;
+            }
+
+            & li:not(.profile) > a:hover {
+                color: var(--brand-color);
+                text-decoration: underline;
+            }
+
+            & .icon-search {
+                --bg-img: "";
+                background-image: var(--bg-img);
+                width: 1.5rem;
+                height: 1.5rem;
+                display: block;
+
+                &[aria-label="search"] {
+                    --bg-img: url(../assets/icons/MagnifyingGlass.svg);
+
+                    &:hover {
+                        --bg-img: url(../assets/icons/MagnifyingGlass-Hover.svg);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (width >= 80em) {
+        .container {
+            padding-block: 1.25rem;
+        }
+    }
+    
+}

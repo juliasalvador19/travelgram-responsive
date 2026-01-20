@@ -1,0 +1,24 @@
+footer {
+    & .container {
+        margin-block: 1rem;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            margin-bottom: 16px;
+        }
+
+        & ul li:hover {
+            color: var(--brand-color);
+            text-decoration: underline;
+        }
+
+    }
+
+    @media (width >= 80em ) {
+        & .container {
+            margin-block: 1.5rem;
+            flex-direction: row;
+        }
+    }
+}
